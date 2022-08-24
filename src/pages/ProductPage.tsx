@@ -3,6 +3,7 @@ import { SyntheticEvent, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import products from "../data/products";
+import Error from "./Error";
 
 interface Product {
     id: number;
@@ -20,11 +21,11 @@ function getProductBySlug(slug: string): Product | null {
 export default function ProductPage() {
     const { slug } = useParams<({ slug: string })>();
 
-    if (!slug) return <span>Slug inválido</span>; {/* Página de produto não encontrado */ }
+    if (!slug) return <Error />; {/* Página de produto não encontrado */ }
 
     const product = getProductBySlug(slug);
 
-    if (!product) return <span>"Slug OK, Produto Indisponível."</span>; {/* Página de produto não encontrado */ }
+    if (!product) return <Error />; {/* Página de produto não encontrado */ }
 
     document.title = product.name;
 
