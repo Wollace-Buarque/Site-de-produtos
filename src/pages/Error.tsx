@@ -21,6 +21,8 @@ export default function Error() {
     function showResults(value: string) {
         setSearchTerms(autoCompleteMatch(value));
     }
+    
+    document.title = "Página não encontrada";
 
     return (
         <div>
