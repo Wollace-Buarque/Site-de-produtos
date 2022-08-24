@@ -1,5 +1,4 @@
 import { GameController, Wallet } from "phosphor-react";
-import { SyntheticEvent, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import products from "../data/products";
