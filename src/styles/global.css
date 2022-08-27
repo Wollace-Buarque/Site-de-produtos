@@ -1,3 +1,6 @@
+@import "button.css";
+@import "repairs.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,35 +14,13 @@ body {
   width: 10px;
   background-color: transparent;
 }
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb { 
   border-radius: 3px;
 
   background-color: #474444;
-}
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .spin {
-    animation: spin infinite 2s linear;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-@font-face {
-  font-family: 'Segoe UI';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Segoe UI'), url('../fonts/Segoe UI.woff') format('woff');
 }

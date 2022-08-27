@@ -1,0 +1,25 @@
+.button {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+    padding: 1rem 4rem;
+    border-radius: 0.25rem;
+    border-width: 1px;
+
+    color: rgb(72 178 233);
+    background-color: rgb(23 23 23);
+    border-width: 1px;
+    border-color: rgb(72 178 233);
+    
+    box-shadow: 0 1px 2px 0 black;
+}
+
+.button:hover {
+    background-color: rgb(72 178 233);
+    color: rgb(0 0 0);
+
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}

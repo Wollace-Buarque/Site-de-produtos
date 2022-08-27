@@ -21,7 +21,7 @@ export default function Error() {
     function showResults(value: string) {
         setSearchTerms(autoCompleteMatch(value));
     }
-    
+
     document.title = "Página não encontrada";
 
     return (
@@ -52,7 +52,7 @@ export default function Error() {
                             <p className="text-base font-normal text-gray-300">
                                 Você pode voltar para <Link
                                     to={"/"}
-                                    className="hover:underline text-[#48B2E9]">
+                                    className="hover:underline text-[#4CC2FF]">
                                     página inicial
                                 </Link> ou tentar pesquisar algo.
                             </p>
