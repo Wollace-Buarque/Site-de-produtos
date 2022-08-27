@@ -1,11 +1,11 @@
 # Site de venda de produtos feito com React
 
-# Instalação das dependências
+## Instalação das dependências
 ```
 npm install
 ```
 
-# Execução da aplicação
+## Execução da aplicação
 ```
 npm run dev
 ```
